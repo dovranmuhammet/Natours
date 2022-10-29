@@ -55,7 +55,9 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
+
 .heading-primary-main {
   display: block;
   font-size: 60px;
@@ -66,12 +68,13 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
+
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.4px;
-  animation-name: moveInRight 1s ease-out;
+  animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft {
